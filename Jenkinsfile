@@ -13,7 +13,7 @@ pipeline {
         stage('Push Image to DockerHub') {
             steps {
                 script {
-                    docker.withRegistry('', 'docker-hub-creds') {
+                    docker.withRegistry('https://regitry.hub.docker.com', 'docker-hub-creds') {
                         docker.image("abbasali1001/devops-mini:latest").push()
                     }
                 }
