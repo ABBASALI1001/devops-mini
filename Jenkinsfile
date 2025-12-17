@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Code') {
             steps {
-                git 'https://github.com/ABBASALI1001/devop-mini.git'
+                git 'https://github.com/ABBASALI1001/devops-mini.git'
             }
         }
 
