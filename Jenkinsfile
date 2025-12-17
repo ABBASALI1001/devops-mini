@@ -5,7 +5,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    docker.build("abbas1001/devops-mini:latest")
+                    docker.build("abbasali1001/devops-mini:latest")
                 }
             }
         }
@@ -14,7 +14,7 @@ pipeline {
             steps {
                 script {
                     docker.withRegistry('', 'docker-hub-creds') {
-                        docker.image("abbas1001/devops-mini:latest").push()
+                        docker.image("abbasali1001/devops-mini:latest").push()
                     }
                 }
             }
