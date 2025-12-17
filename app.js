@@ -1,7 +1,7 @@
 const http = require('http');
 
 http.createServer((req, res) => {
-  res.end("Hello DevOps 🚀 Version 1");
+  res.end("bye devops🚀 Version 1");
 
 }).listen(3000);
 
